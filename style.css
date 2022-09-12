@@ -1,0 +1,170 @@
+@import url(https://fonts.googleapis.com/css?family=Bungee);
+
+@import url(https://fonts.googleapis.com/css?family=VT323);
+
+body {
+  background-color: #000000;
+}
+
+nav {
+  background-color: #ffffff;
+  font-family: "VT323";
+  font-weight: 700;
+  font-size: 35px;
+  text-align: right;
+  text-transform: uppercase;
+  display: block;
+  padding: 10px 0px 10px 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: auto;
+}
+
+.navlink {
+  margin: 10px;
+}
+
+a {
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #808080;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+}
+
+#welcome-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-section {
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: #ffffff;
+  font-family: "Bungee";
+  font-size: 60px;
+  text-align: center;
+}
+
+h2 {
+  color: #ffffff;
+  font-family: "Bungee";
+  font-size: 50px;
+  text-align: center;
+}
+
+p {
+  color: #ffffff;
+  font-family: "VT323";
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.project-tile {
+  background: #ffffff;
+  font-family: "Bungee";
+  font-size: 30px;
+  text-align: center;
+  border-radius: 5%;
+  padding-top: 10px;
+}
+
+#projects {
+  background: #000000;
+  min-height: 100px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(60px, 1fr));
+  grid-template-rows: repeat(2, minmax(60px, 1fr));
+  grid-gap: 30px;
+}
+
+iframe {
+  margin: 10px;
+}
+
+#contact {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact {
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  max-height: 30px;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#rabbit {
+  max-height: 150px;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 500px) {
+  nav {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 30px;
+  }
+
+  .project-tile {
+    font-size: 25px;
+    border-radius: 0%;
+  }
+
+  #projects {
+    grid-template-columns: minmax(60px, 1fr);
+    grid-template-rows: repeat(4, minmax(60px, 1fr));
+  }
+
+  iframe {
+    width: 90%;
+    height: 1fr;
+  }
+}
